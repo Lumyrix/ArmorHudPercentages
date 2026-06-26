@@ -1,0 +1,35 @@
+{
+    "schemaVersion": 1,
+    "id": "armorhud-percentages",
+    "version": "${version}",
+    "name": "ArmorHUD-Percentages",
+    "description": "Add-on for uku's Armor HUD showing armor durability as a percentage above each slot.",
+    "authors": [
+        "NotRyken"
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/project/e74hc5Bq",
+        "sources": "https://github.com/NotRyken/armor-hud-numbers",
+        "issues": "https://github.com/NotRyken/armor-hud-numbers/issues"
+    },
+    "license": "MIT",
+    "icon": "",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "com.notryken.ArmorHudPercentagesClient"
+        ]
+    },
+    "mixins": [
+        {
+            "config": "armor-hud-percentages.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": "${loader_versions}",
+        "minecraft": ">=1.21.9 <=1.21.10",
+        "java": "${java_versions}",
+        "ukus-armor-hud": "${armorhud_versions}"
+    }
+}

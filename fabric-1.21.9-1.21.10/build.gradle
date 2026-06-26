@@ -1,0 +1,60 @@
+plugins {
+    id 'fabric-loom' version '1.14.10'
+    id 'maven-publish'
+}
+version = "${project.mod_version}+${project.minecraft_version}"
+group = project.maven_group
+base { archivesName = project.archives_base_name + '-fabric-1.21.9-1.21.10' }
+
+sourceSets {
+    main {
+        java { srcDirs rootProject.file('common/src/main/java') }
+        resources { srcDirs rootProject.file('common/src/main/resources') }
+    }
+}
+
+repositories {
+    maven { name = 'Bawnorton'; url = 'https://maven.bawnorton.com/releases' }
+    maven { name = 'Modrinth'; url = uri('https://api.modrinth.com/maven') }
+    maven { name = 'uku'; url = 'https://maven.uku3lig.net/releases' }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    include(implementation(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-fabric:${project.mixinsquared_version}")))
+    modImplementation files(rootProject.file('libs/ukus-armor-hud-0.8.1+mc1.21.6.jar'))
+    modImplementation "net.uku3lig:ukulib:${project.ukulib_version}"
+}
+
+processResources {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    final expandProps = [
+        version: project.version,
+        loader_versions: project.loader_versions,
+        minecraft_versions: project.minecraft_versions,
+        java_versions: project.java_versions,
+        armorhud_versions: project.armorhud_versions,
+    ]
+    filesMatching('fabric.mod.json') { expand(expandProps) }
+    inputs.properties(expandProps)
+}
+
+tasks.withType(JavaCompile).configureEach { it.options.release = 21 }
+
+java {
+    withSourcesJar()
+    sourcesJar { duplicatesStrategy = DuplicatesStrategy.EXCLUDE }
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    inputs.property 'archivesName', project.base.archivesName
+    from(rootProject.file('LICENSE.txt')) {
+        rename { "LICENSE_${inputs.properties.archivesName}.txt" }
+    }
+}
