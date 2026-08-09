@@ -1,92 +1,152 @@
-Lumyrix Source License (LSL)
-Version 1.0
+LUMYRIX SOURCE LICENSE (LSL)
+Version 1.0 — 2026
 
 Copyright (c) 2026 Lumyrix
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, and to permit persons to
-whom the Software is furnished to do so, subject to the following conditions:
+IMPORTANT NOTICE
+
+This license is intended to be used internationally, including in Brazil.
+It is a software license, not a transfer of copyright ownership. If any term
+conflicts with mandatory law applicable to a specific person or country, that
+mandatory law prevails only to the extent of the conflict. Legal advice is
+recommended before commercial publication.
 
 1. Definitions
-   "Software" means the original work provided by Lumyrix, in source or
-   binary form.
-   "Fork" means a modified version of the Software that contains changes
-   beyond mere bug fixes, as described below.
-   "Distribute" means making the Software or a Fork available to others,
-   whether in source or binary form, including but not limited to posting on
-   public repositories, mod platforms, or file hosting services.
 
-2. Forking and Modifications
-   a. Anyone may create a Fork of the Software for private or public use.
-   b. A Fork must include significant modifications, such as the addition,
-      removal, or alteration of features. A modification that only corrects
-      errors (bug fixes) is not considered a significant modification.
-      You may not distribute a Fork that consists solely of bug fixes without
-      the prior written approval of the Original Author. If you discover a
-      bug, you are strongly encouraged to report it to the Original Author
-      so it may be addressed in the original Software.
-   c. A Fork may add, remove, or modify any features without restriction, as
-      long as all other conditions are met.
+“Software” means the source code, binaries, documentation, and assets created
+and released by Lumyrix under this License.
 
-3. Redistribution
-   a. You may NOT distribute the original, unmodified Software in any form.
-      This includes uploading the exact Software binary or source code to
-      any website, repository, or mod platform (including Modrinth,
-      CurseForge, GitHub, etc.).
-   b. You may distribute a Fork that complies with this License on any
-      platform, including Modrinth and CurseForge, provided the Fork is
-      clearly distinct from the original Software and follows all naming
-      and branding rules.
+“Original Software” means the Software as released by Lumyrix, including a
+rebuild or repackaging that does not contain a Qualifying Change.
 
-4. Source Code and License of Forks
-   a. If you distribute a Fork in binary form, you must make the complete
-      corresponding source code publicly available under the terms of this
-      License. The source code must be provided in a readily accessible
-      manner (for example, a public repository) or made available on request.
-   b. Private Forks that are never distributed do not require source code
-      publication.
-   c. Any distributed Fork must be licensed in its entirety under this
-      License (the Lumyrix Source License). You may not impose any additional
-      restrictions on the recipients' exercise of the rights granted herein.
-      This ensures all modifications remain open under the same terms.
+“Fork” means a version based on the Software that contains at least one
+Qualifying Change and is distributed under a different project name.
 
-5. Attribution and Authorship
-   a. You are not required to include the original copyright notice or the
-      name "Lumyrix" in your Fork.
-   b. You may add your own name and copyright notice to a Fork. You may
-      also include a statement such as "Based on Lumyrix" or similar, as
-      long as it does not misrepresent the origin of the code.
-   c. You must NOT claim or imply that you are the original author of the
-      unmodified Software. Any suggestion that you created the original work
-      is strictly prohibited.
+“Qualifying Change” means either:
 
-6. Naming and Branding
-   a. You may not use the original name of the Software for any Fork.
-      A Fork must be distributed under a new, distinct name.
-   b. You may not reuse, reproduce, or distribute the logos, icons, or other
-      distinctive visual assets that are part of the original Software.
-   c. Even if a Fork is significantly different, the name must be changed;
-      this requirement applies to all Forks without exception.
+  (a) a genuine correction of a reproducible defect; or
+  (b) a material technical, functional, compatibility, performance, security,
+      or platform improvement that changes the behavior or capability of the
+      Software in a meaningful way.
 
-7. General Terms
-   This License does not grant permission to use the trade names, trademarks,
-   service marks, or product names of the Original Author, except as required
-   for reasonable and customary use in describing the origin of the Fork
-   (e.g., "based on Software by Lumyrix").
+The following are not Qualifying Changes by themselves: changing a version
+number, metadata, description, file name, package name, logo, language,
+formatting, build process, dependency declaration, or cosmetic assets;
+recompiling; repackaging; or making a fake update intended to evade this
+License.
 
-8. Disclaimer of Warranty
-   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-   THE SOFTWARE.
+“Distribute” means publishing, uploading, selling, monetizing, sharing, or
+otherwise making the Software or a Fork available to another person.
+
+2. Permission
+
+Subject to this License, permission is granted to use, study, copy, modify,
+and create Forks of the Software for private or public use.
+
+No ownership of the copyright is transferred.
+
+3. Restrictions on the Original Software
+
+No third party may sell, monetize, place behind a paywall, bundle for payment,
+or otherwise commercially exploit the Original Software.
+
+No third party may distribute an unmodified copy, mirror, reupload, renamed
+copy, repackaged copy, or binary-only copy of the Original Software without
+prior written permission from Lumyrix.
+
+4. Distribution of Forks
+
+A Fork may be distributed only if it contains a Qualifying Change, has a new
+and distinct project name, and complies with every condition of this License.
+
+Every distributed Fork must include a human-readable CHANGELOG identifying
+each bug fix or material improvement, the affected files or features, and the
+date of the change. A statement such as “updated”, “maintained”, or “new
+version” alone is not sufficient evidence of a Qualifying Change.
+
+A Fork may be distributed commercially only if it contains a Qualifying
+Change. Commercial distribution must not charge for access to the Original
+Software and must not suggest that the Fork is official, endorsed, or created
+by Lumyrix.
+
+5. Source Code Requirement
+
+When a Fork is distributed in binary form, the complete corresponding source
+code of that Fork must be made publicly available within three (3) calendar
+days after the first distribution of the binary.
+
+The source must be available without payment, account requirement, or access
+approval, through a stable public repository or equivalent public location.
+It must contain the build instructions and all Fork source files necessary to
+reproduce the distributed binary.
+
+Independent third-party libraries, tools, and assets are excluded from this
+requirement and remain governed by their own licenses. The Fork distributor
+must still identify those components and comply with their licenses.
+
+6. License and Attribution
+
+Material copied from or derived from the Software must remain under this
+License. A Fork may not add restrictions that remove or weaken the rights
+granted by this License.
+
+Every distributed Fork must:
+
+  (a) preserve the original copyright notice;
+  (b) include this License;
+  (c) visibly state “Based on software by Lumyrix”; and
+  (d) identify the Fork author separately from Lumyrix.
+
+The attribution and the statement “Based on software by Lumyrix” may not be
+removed, hidden, replaced, or made inaccessible in any distributed Fork.
+The required attribution must not imply that Lumyrix endorses or maintains
+the Fork.
+
+7. Names, Logos, and Branding
+
+A Fork must use a distinct primary name and may not use the original project
+name as its own name. A Fork may not use Lumyrix logos, icons, artwork,
+trademarks, or distinctive visual branding without written permission.
+
+The phrase “Based on software by Lumyrix” may be used only as attribution.
+
+A Fork must not use Lumyrix’s official download links, repository links,
+release channels, issue trackers, package identifiers, or other official
+distribution channels in a way that could make the Fork appear to be the
+Original Software or an official release.
+
+8. No Additional Restrictions
+
+This License does not require third-party code or independent components to
+use this License. It does require the distributor to respect all applicable
+third-party licenses. Nothing in this License grants patent, trademark, or
+other rights not expressly stated.
 
 9. Termination
-   Any violation of the terms of this License automatically terminates your
-   rights under it. However, parties who have received Forks from you under
-   this License will not have their licenses terminated provided they remain
-   in compliance.
+
+Rights under this License terminate automatically upon a material violation.
+They are restored only when the violation is fully corrected, unless Lumyrix
+provides written reinstatement. Compliant recipients who did not participate
+in the violation retain their rights.
+
+10. Disclaimer and Liability
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+NON-INFRINGEMENT. TO THE MAXIMUM EXTENT PERMITTED BY LAW, LUMYRIX SHALL NOT
+BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL
+DAMAGE ARISING FROM THE SOFTWARE OR ITS USE.
+
+11. Governing Law and Jurisdiction
+
+This License is governed by the laws of the Federative Republic of Brazil.
+Disputes shall be submitted to the competent courts of Brazil, subject to
+mandatory consumer-protection, public-policy, or jurisdiction rules that may
+apply to a party outside Brazil.
+
+12. Severability and Entire Agreement
+
+If a provision is held invalid or unenforceable, it shall be limited or
+replaced to the minimum extent necessary, and the remaining provisions shall
+remain effective. This License is the complete agreement governing the
+Software unless Lumyrix publishes a later version or grants written terms.
