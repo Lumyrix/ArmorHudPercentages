@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.notryken.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "client-Uku-ArmorHud-Percentages+1.21.6-1.21.8-refmap.json",
+  "client": [
+    "InGameHudMixinSquared"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
